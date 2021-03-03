@@ -1,16 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: "Great Gatsby",
+    title: 'Great Gatsby',
   },
   plugins: [
-    "gatsby-plugin-mdx",
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-gatsby-cloud',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "pages",
+      __key: 'pages',
     },
   ],
 };
