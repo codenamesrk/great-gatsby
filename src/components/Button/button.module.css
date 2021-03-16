@@ -1,0 +1,17 @@
+.button__white {
+  color: #161038;
+  background: #fff;
+  border-color: #161038;
+  padding: 10px 40px;
+  border: 2px solid;
+  text-decoration: none;
+  max-width: 200px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.button__white:hover {
+  background: #161038;
+  color: #fff;
+}

@@ -1,0 +1,8 @@
+.view {
+  max-width: 640px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
