@@ -46,10 +46,6 @@ const Form = ({ handleSubmit, handleUpdate }) => (
       navigate(`/app/profile`)
     }}
   >
-    <p>
-      For this demo, please log in with the username <code>gatsby</code> and the
-      password <code>demo</code>.
-    </p>
     <label className={form__label}>
       Username
       <input
