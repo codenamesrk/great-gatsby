@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import View from '../components/View'
-import Status from '../components/Status'
 import Button from '../components/Button'
+import Layout from '../components/Layout'
+import Status from '../components/Status'
+import View from '../components/View'
 
 const Index = () => (
   <Layout>

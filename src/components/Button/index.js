@@ -8,4 +8,8 @@ const Button = ({ to, children }) => (
   </Link>
 )
 
+export const SubmitButton = ({ children }) => (
+  <input className={button__white} type="submit" value={children} />
+)
+
 export default Button

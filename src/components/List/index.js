@@ -68,7 +68,7 @@ class List extends React.Component {
                   {shelter.isShelter === 'yes' ? (
                     <img src={shelterSign} alt="shelter sign" width="36px" />
                   ) : (
-                    <span class={no}>&#10006;</span>
+                    <span className={no}>&#10006;</span>
                   )}
                   {shelter.stop_sign === 'yes' ? (
                     <img src={stopSign} alt="stop sign" width="36px" />
@@ -81,9 +81,9 @@ class List extends React.Component {
                     <h5>AC</h5>
                     <h5>
                       {shelter.ac === 'yes' ? (
-                        <span class={yes}>&#10004;</span>
+                        <span className={yes}>&#10004;</span>
                       ) : (
-                        <span class={no}>&#10006;</span>
+                        <span className={no}>&#10006;</span>
                       )}
                     </h5>
                   </div>
@@ -92,9 +92,9 @@ class List extends React.Component {
                     <h5>
                       {' '}
                       {shelter.light === 'yes' ? (
-                        <span class={yes}>&#10004;</span>
+                        <span className={yes}>&#10004;</span>
                       ) : (
-                        <span class={no}>&#10006;</span>
+                        <span className={no}>&#10006;</span>
                       )}
                     </h5>
                   </div>
@@ -103,7 +103,7 @@ class List extends React.Component {
                     <h5>
                       {' '}
                       {shelter.recharge === 'yes' ? (
-                        <span class={yes}>&#10004;</span>
+                        <span className={yes}>&#10004;</span>
                       ) : (
                         'no'
                       )}

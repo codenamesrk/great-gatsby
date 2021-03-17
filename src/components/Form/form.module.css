@@ -20,14 +20,16 @@
 }
 
 .form__button {
-  background-color: rebeccapurple;
-  border: 0;
-  color: white;
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-  padding: 0.25rem 1rem;
-  transition: background-color 150ms linear;
+  color: #161038;
+  background: #fff;
+  border-color: #161038;
+  padding: 10px 40px;
+  border: 2px solid;
+  text-decoration: none;
+  max-width: 200px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
 }
 
 .form__button:hover {

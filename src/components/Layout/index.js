@@ -9,7 +9,7 @@ import { main } from './main.module.css'
 
 const Layout = ({ children }) => (
   <div>
-    <Helmet title="Simple Authentication With Gatsby" />
+    <Helmet title="Bus Shelters | ITC Abudhabi" />
     <Header />
     <main className={main}>{children}</main>
   </div>

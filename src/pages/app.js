@@ -1,12 +1,12 @@
 import React from 'react'
-import { Router } from '@reach/router'
 import Layout from '../components/Layout'
-import Profile from '../components/Profile'
-import Details from '../components/Details'
-import List from '../components/List'
-import Login from '../components/Login'
-import PrivateRoute from '../components/PrivateRoute'
 import Status from '../components/Status'
+import { Router } from '@reach/router'
+import PrivateRoute from '../components/PrivateRoute'
+import Login from '../components/Login'
+import Details from '../components/Details'
+import Profile from '../components/Profile'
+import List from '../components/List'
 
 const App = () => (
   <Layout>
