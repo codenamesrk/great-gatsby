@@ -1,3 +1,18 @@
+h5,
+h4,
+img,
+.no,
+.card__shelter,
+.card__shelter_row,
+.card__shelter_row_2 > div {
+  margin: 0;
+}
+
+h4 {
+  color: #161308;
+  line-height: 1.25;
+}
+
 .grid__shelters {
   display: grid;
   grid-template-rows: 1fr;
@@ -9,8 +24,57 @@
 
 .card__shelter {
   padding: 1rem;
-  margin: 0;
   background-color: #f6f6f6;
   border: 1px solid rgb(247, 248, 249);
   border-radius: 10px;
+}
+
+.card__shelter_row {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.card__shelter_info {
+  padding-right: 0.5rem;
+  justify-self: start;
+}
+
+.card__shelter_info h5 {
+  color: #faa317;
+}
+
+.card__shelter_row_2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin: 1rem 0 0;
+  align-items: start;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.no,
+.yes {
+  font-size: 1rem;
+}
+
+.yes {
+  color: green;
+}
+.no {
+  color: red;
+}
+
+.search__box {
+  width: 100%;
+  max-width: 640px;
+  height: 2rem;
+  border-radius: 6px;
+  border: 1px solid gray;
+  padding: 10px;
+  text-transform: capitalize;
 }

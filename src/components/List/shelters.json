@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "sid": "11894B",
+    "name": "Al Wazn St / Dalma Mall Main",
+    "stop_sign": "yes",
+    "isShelter": "no",
+    "ac": "no",
+    "light": "no",
+    "recharge": "no"
+  },
+  {
+    "id": 2,
+    "sid": "11892B",
+    "name": "St 11 / St 32",
+    "stop_sign": "yes",
+    "isShelter": "yes",
+    "ac": "no",
+    "light": "no",
+    "recharge": "no"
+  },
+  {
+    "id": 3,
+    "sid": "00287B",
+    "name": "Khalifa University",
+    "stop_sign": "yes",
+    "isShelter": "yes",
+    "ac": "yes",
+    "light": "yes",
+    "recharge": "yes"
+  },
+  {
+    "id": 4,
+    "sid": "00284B",
+    "name": "Al Mawaqid St / Emirates College",
+    "stop_sign": "yes",
+    "isShelter": "no",
+    "ac": "no",
+    "light": "no",
+    "recharge": "yes"
+  }
+]
