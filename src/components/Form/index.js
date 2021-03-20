@@ -9,7 +9,7 @@ const Form = ({ handleSubmit, handleUpdate }) => (
     method="post"
     onSubmit={(event) => {
       handleSubmit(event)
-      navigate(`/app/profile`)
+      navigate(`/app/list`)
     }}
   >
     <label className={form__label}>

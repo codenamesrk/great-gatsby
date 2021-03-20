@@ -11,12 +11,12 @@ const setUser = (user) =>
 export const handleLogin = ({ username, password }) => {
   if (!isBrowser) return false
 
-  if (username === `ali` && password === `demo`) {
+  if (username === `mohammed` && password === `demo`) {
     console.log(`Credentials match! Setting the active user.`)
     return setUser({
-      name: `Ali`,
-      legalName: `James K. User`,
-      email: `ali@example.org`,
+      name: `Mohammed`,
+      legalName: `Muhammed. User`,
+      email: `muhammed@example.org`,
     })
   }
 

@@ -1,6 +1,6 @@
 .status {
   font-size: 87.5%;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   background-color: #f2f2f2;
   box-shadow: 3px -7px 6px -5px rgb(0 0 0 / 16%);
 }
@@ -8,7 +8,7 @@
 .status__text {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   color: #000;
   font-size: 0.875rem;
   line-height: 1.125;
