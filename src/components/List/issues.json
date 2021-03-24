@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "sid": "11894B",
+    "name": "Al Wazn St / Dalma Mall Main",
+    "stop_sign": "no",
+    "isShelter": "no",
+    "ac": "yes",
+    "light": "no",
+    "recharge": "no"
+  },
+  {
+    "id": 2,
+    "sid": "11892B",
+    "name": "St 11 / St 32",
+    "stop_sign": "no",
+    "isShelter": "yes",
+    "ac": "yes",
+    "light": "no",
+    "recharge": "yes"
+  }
+]

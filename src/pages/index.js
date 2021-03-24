@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Button from '../components/Button'
 import View from '../components/View'
+import { Issues } from '../components/List'
+import Button from '../components/Button'
 import { isLoggedIn } from '../utils/auth'
 
 const Index = () => (
@@ -13,7 +14,8 @@ const Index = () => (
       </p>
       {isLoggedIn() ? (
         <>
-          <Button to="/app/list">View the list</Button>
+          <Button to="/app/list">Bus Shelters</Button>
+          <Issues />
         </>
       ) : (
         <>

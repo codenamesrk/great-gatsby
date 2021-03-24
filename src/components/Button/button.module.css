@@ -1,15 +1,36 @@
+.button__blue,
 .button__white {
-  color: #161038;
-  background: #faa317;
   padding: 0.75rem 2rem;
   text-align: center;
   text-decoration: none;
+  outline: none;
   margin-top: 2rem;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
 }
 
+.button__white {
+  color: #161038;
+  background: #faa317;
+}
+
 .button__white:hover {
   background: #161038;
   color: #fff;
+}
+
+.button__blue {
+  color: #fff;
+  background: #161038;
+}
+
+.button__small {
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.6rem;
+  letter-spacing: 0.025rem;
+  /* background: #fb451740; */
+  border: 1px solid #a2a2a2;
+  border-radius: 5px;
 }

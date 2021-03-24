@@ -1,6 +1,7 @@
 import React from 'react'
 import View from '../View'
 import shelterList from './shelters.json'
+import issueList from './issues.json'
 import {
   grid__shelters,
   card__shelter,
@@ -10,10 +11,13 @@ import {
   no,
   yes,
   search__box,
+  card__shelter__issue_row,
+  card__shelter__issue_type,
 } from './list.module.css'
 import stopSign from '../../images/stop.png'
 import shelterSign from '../../images/bus-stop.png'
 import Modal from '../../components/Modal'
+import { SmallButton } from '../Button'
 
 class List extends React.Component {
   constructor(props) {
@@ -136,12 +140,12 @@ class List extends React.Component {
                 </div>
               </div>
               <div>
-                <button
-                  aria-label={shelter.sid}
+                <SmallButton
+                  label={shelter.sid}
                   onClick={() => this.modalFire(shelter.sid)}
                 >
                   report issue
-                </button>
+                </SmallButton>
               </div>
             </div>
           ))}
@@ -152,6 +156,77 @@ class List extends React.Component {
           modalStomp={this.modalStomp}
         />
       </View>
+    )
+  }
+}
+
+export class Issues extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      loading: true,
+    }
+  }
+  componentDidMount = () => {
+    this.setState({
+      loading: false,
+    })
+  }
+  render() {
+    return (
+      <>
+        <hr />
+        <h3>Reported Issues</h3>
+        {this.state.loading && 'Loading...'}
+        <section className={grid__shelters}>
+          {issueList.map((shelter, index) => (
+            <div key={shelter.id} className={card__shelter}>
+              <div className={card__shelter__issue_row}>
+                <div className={card__shelter_info}>
+                  <h5>{shelter.sid}</h5>
+                  <h4>{shelter.name}</h4>
+                </div>
+              </div>
+              {shelter.ac === 'yes' ? (
+                <div className={card__shelter__issue_type}>
+                  <h5>AC</h5>
+                  <h5>
+                    <span>Needs Repair</span>
+                  </h5>
+                </div>
+              ) : (
+                ''
+              )}
+
+              {shelter.light === 'yes' ? (
+                <div className={card__shelter__issue_type}>
+                  <h5>Light</h5>
+                  <h5>
+                    <span>needs repair</span>
+                  </h5>
+                </div>
+              ) : (
+                ''
+              )}
+              {shelter.recharge === 'yes' ? (
+                <div className={card__shelter__issue_type}>
+                  <h5>Recharge Pt</h5>
+                  <h5>
+                    <span>Needs repair</span>
+                  </h5>
+                </div>
+              ) : (
+                ''
+              )}
+            </div>
+          ))}
+        </section>
+        <Modal
+          isActive={this.state.isActive}
+          shelterInfo={this.state.selectedShelter}
+          modalStomp={this.modalStomp}
+        />
+      </>
     )
   }
 }

@@ -57,6 +57,24 @@ h4 {
   font-size: 0.8rem;
 }
 
+.card__shelter__issue_row {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.card__shelter__issue_type {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  border: 1px red solid;
+  padding: 0.25rem 0.5rem;
+}
+
+.card__shelter__issue_type h5:last-of-type {
+  text-align: right;
+}
+
 .no,
 .yes {
   font-size: 1rem;
@@ -77,4 +95,8 @@ h4 {
   border: 1px solid gray;
   padding: 10px;
   text-transform: capitalize;
+}
+
+textarea {
+  padding: 0.5rem;
 }

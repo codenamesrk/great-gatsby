@@ -8,6 +8,7 @@ import {
   modal__grid,
   modal__form,
 } from './modal.module.css'
+import { SubmitButton } from '../Button'
 
 class Modal extends React.Component {
   render() {
@@ -38,8 +39,8 @@ class Modal extends React.Component {
               rows="5"
             />
             <div className={modal__grid}>
-              <input type="reset" value="Clear" />
-              <button type="submit">Send</button>
+              <SubmitButton type="reset">Clear</SubmitButton>
+              <SubmitButton type="submit">Send</SubmitButton>
             </div>
           </form>
         </div>
