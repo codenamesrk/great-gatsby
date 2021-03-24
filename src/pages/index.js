@@ -7,18 +7,18 @@ import { isLoggedIn } from '../utils/auth'
 
 const Index = () => (
   <Layout>
-    <View title="Demo Application">
-      <p>
-        Proof of concept to list the bus shelters for the Department of
-        Transport, Abu Dhabi.
-      </p>
+    <View title={isLoggedIn() ? 'Dashboard' : 'Demo Application'}>
       {isLoggedIn() ? (
         <>
-          <Button to="/app/list">Bus Shelters</Button>
+          <Button to="/app/list">View Bus Shelters</Button>
           <Issues />
         </>
       ) : (
         <>
+          <p>
+            Proof of concept to list the bus shelters for the Department of
+            Transport, Abu Dhabi.
+          </p>
           <Button to="/app/login">Login</Button>
         </>
       )}
