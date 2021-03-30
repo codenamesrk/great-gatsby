@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'ITC Abudhabi',
-        short_name: 'ITC Abudhabi',
+        name: 'ITC - Abu Dhabi',
+        short_name: 'ITC - Abu Dhabi',
         start_url: '/',
         background_color: '#6b37bf',
         theme_color: '#6b37bf',
